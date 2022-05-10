@@ -1,0 +1,9 @@
+1. Добавил скрипту stats.js атрибут async, потому что скрипт абсолютно независим
+
+2. 
+   '
+   contacts.addEventListener("scroll", (e) => {
+      stickyHeader.textContent = Math.floor(contacts.scrollTop / 18);
+   });
+   '
+   Изменил обработчик. Делим дистанцию от верхнего элемента до верхней точки видимого контента на высоту элемента. И результат вписываю в StickyHeader
